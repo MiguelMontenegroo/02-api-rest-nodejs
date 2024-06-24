@@ -104,7 +104,7 @@ describe('Transactions routes', () => {
       })
 
     const summaryResponse = await request(app.server)
-      .get('/transactions')
+      .get('/transactions/summary')
       .set('Cookie', cookies)
       .expect(200)
 
